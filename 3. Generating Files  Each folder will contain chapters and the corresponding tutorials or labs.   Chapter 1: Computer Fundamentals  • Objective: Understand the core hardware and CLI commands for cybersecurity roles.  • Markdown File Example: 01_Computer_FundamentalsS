@@ -1,0 +1,20 @@
+# Chapter 1: Computer Fundamentals
+
+## Objective
+Learn the building blocks of computer systems, their security concerns, and use CLI commands to analyze them effectively.
+
+## Sections
+### 1.1 Hardware Components & Security
+- **CPU (Central Processing Unit)**: Vulnerabilities like Spectre/Meltdown allow attackers to steal sensitive data from memory.
+- **RAM (Random Access Memory)**: Crucial for detecting threats like fileless malware, which resides temporarily in volatile memory.
+- **BIOS/UEFI**: Firmware starting the machine is a critical attack vector for rootkits.
+
+### 1.2 CLI Hardware Lab
+Run the following commands to analyze hardware details:
+
+**Linux:**
+```bash
+lscpu          # View CPU information
+lsusb          # Display USB devices connected
+lsblk          # List all storage devices/partitions
+free -h        # Check RAM usage
