@@ -1,0 +1,3 @@
+Get-ComputerInfo               # Summary of hardware & OS
+Get-WmiObject -Class Win32_BIOS # BIOS details
+Get-PhysicalDisk               # Details of physical storage
