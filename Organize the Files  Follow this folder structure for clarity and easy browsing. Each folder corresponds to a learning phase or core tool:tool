@@ -1,0 +1,20 @@
+The-Blue-Team-Master-Bible/
+├── README.md                       # Master Guide documenting the roadmap
+├── 01_Computer_Fundamentals/       
+│   ├── README.md                   # Summary of Chapter 1
+│   ├── Hardware_Security_DeepDive.md
+│   └── CLI_Hardware_Lab.md
+├── 02_Networking_Basics/
+│   ├── README.md                   # Summary of Chapter 2
+│   ├── OSI_Model_Security.md
+│   └── Network_Protocols_Lab.md
+├── 03_Linux_Mastery/
+│   ├── README.md                   # Linux Fundamentals Chapter Overview
+│   └── Investigation_Tools.md
+├── 05_Essential_Tools/
+│   ├── README.md                   # Nmap, Wireshark, Splunk Tutorials
+│   └── SIEM_Query_Guide.md
+├── 06_Programming_and_Scripting/
+│   ├── README.md                   # Marking scripting chapters
+│   └── scripts/                    # Automations in Python, Bash, PowerShell
+└── assets/                         # All diagrams & screenshots
