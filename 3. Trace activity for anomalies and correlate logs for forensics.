@@ -1,0 +1,26 @@
+---
+
+### **Chapter 2: Networking Basics**
+- **Objective:** Map and secure data flows.
+- **Markdown File Example:** `02_Networking_Basics/README.md`
+
+```markdown
+# Chapter 2: Networking Basics
+
+## Objective
+Explore the OSI model, networking protocols, and common defensive measures.
+
+## Sections
+### 2.1 The OSI Model: The Defender's Map
+- **Layer 2: MAC Addresses -** Be cautious of MAC Spoofing attacks.
+- **Layer 4: TCP vs UDP -** Monitor for SYN Flood attacks.
+
+### 2.2 Critical Services Security
+1. **DNS (Domain Name System):** Watch for DNS Tunneling—a covert channel hiding malicious payloads in queries.
+2. **Firewalls:** Watch for IP Spoofing or port scan anomalies.
+
+**CLI Commands**
+Analyze common networking activities:
+```bash
+ping google.com # Verify connectivity
+netstat -tuln   # Show active network connections
