@@ -1,0 +1,9 @@
+---
+
+### 4. **Push to GitHub**
+Once the directory structure and files are ready:
+1. **Initialize Git in the root folder:**  
+   ```bash
+   git init
+   git add .
+   git commit -m "Add Blue Team Master Bible - Chapter 1 and 2"
