@@ -1,1 +1,2 @@
 Get-WinEvent -LogName System | Where-Object { $_.Message -match "USB" }
+Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USBSTOR\* | Select-Object FriendlyName, PSChildName
