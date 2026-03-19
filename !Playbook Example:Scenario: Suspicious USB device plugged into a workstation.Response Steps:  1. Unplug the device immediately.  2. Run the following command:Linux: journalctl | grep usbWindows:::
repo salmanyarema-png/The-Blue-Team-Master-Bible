@@ -1,2 +1,11 @@
 Get-WinEvent -LogName System | Where-Object { $_.Message -match "USB" }
 Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USBSTOR\* | Select-Object FriendlyName, PSChildName
+Get-WinEvent -LogName System | Where-Object {$_.Message -like "*USB*"}
+| Phase        | Actions                                                                 | Tools/Commands                                                                 | Responsible Roles       |
+|--------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------|
+| Preparation  | Enforce USB usage policies; train staff; maintain workstation baselines | EDR, SIEM, USB control software                                                | Security Team, IT Admin |
+| Detection    | Unplug device; check logs; identify IoCs                               | Linux: `journalctl | grep usb` <br> Windows: `Get-WinEvent -LogName System | Where-Object {$_.Message -like "*USB*"}` | SOC Analyst, User       |
+| Containment  | Isolate workstation; preserve USB for forensics; disable ports         | Network isolation tools, forensic imaging tools                                | SOC Analyst, IT Admin   |
+| Eradication  | Remove malicious files/drivers; run AV scans; patch vulnerabilities    | Antivirus, EDR, OS patching                                                    | Security Team, IT Admin |
+| Recovery     | Restore from clean backup; reconnect after validation; monitor activity| Backup systems, monitoring dashboards                                          | IT Admin, SOC Analyst   |
+| Lessons Learned | Conduct post-incident review; update policies; share findings; feed IoCs into SIEM | Incident review reports, SIEM/EDR threat feeds                                 | Security Team, Management|
