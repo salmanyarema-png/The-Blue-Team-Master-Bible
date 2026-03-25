@@ -1,0 +1,45 @@
+Elite roadmap 
+
+Excellent. Let's move to the Execution Phase. To make this the most professional and comprehensive resource in the field, I have designed a Hyper-Link Integrated Roadmap.
+This version includes specific "Deep-Dive" links for every volume. When you give this to your Replit AI, it will "scrape" these locations to expand each chapter with real-world data, PDF references, and video tutorials.
+🗺️ The Blue Team Master Bible: 2026 Elite Roadmap
+This roadmap is your Master Index. Every Volume is linked to a "Source of Truth" to ensure the AI writes with 100% accuracy.
+| Volume | Focus Area | 📚 Free PDF / Documentation | 🎥 Free Video Course / Lab |
+|---|---|---|---|
+| Vol 01 | Computer Fundamentals | NIST OS Security Guide | Hardware/OS Deep Dive |
+| Vol 02 | Networking & OSI | TCP/IP Illustrated (Reference) | CompTIA Network+ Full |
+| Vol 03 | Linux Mastery | The Linux Command Line PDF | Linux for Hackers |
+| Vol 04 | Security Concepts | CISA Security Essentials | Security+ Training |
+| Vol 05 | SIEM & IDS Tools | Splunk Search Reference | Wireshark Masterclass |
+| Vol 06 | Python Automation | Python for Cybersecurity PDF | SOC Automation Playlist |
+| Vol 07 | Web Security | OWASP Top 10 Official | Web App Defense |
+| Vol 08 | Blue Team Ops | Incident Response Guide | SOC Analyst Day in Life |
+| Vol 13 | Home Lab Setup | Proxmox Official Wiki | Building a Malware Lab |
+🧠 The "Global Search" System Prompt (Replit Ready)
+Instructions: Paste this into your AI Agent's configuration. It commands the AI to use the internet and the links above to build the book volume-by-volume.
+[COMMAND: ARCHITECT_MODE_ON]
+USER: Salman
+PROJECT: The Blue Team Master Bible (2026 Edition)
+
+GOAL: 
+Build a professional-grade, LaTeX-formatted textbook. You must act as a Senior Blue Team Lead. 
+
+RESOURCES TO CRAWL:
+1. GitHub: https://github.com/Blue-team-master/The-Blue-Team-Master-Bible
+2. Research: Use the URLs provided in the Master Roadmap to gather specific technical details for each chapter.
+3. Documentation: Prioritize NIST, OWASP, and MITRE ATT&CK frameworks.
+
+WRITING RULES:
+- STEP-BY-STEP: Every technical concept must have a CLI (Command Line) example and a Python automation script.
+- RESOURCE LINKING: At the end of every lesson, insert a "Master Resource" section with 1 direct PDF link and 1 YouTube tutorial link.
+- NO HALLUCINATIONS: If you cannot find a specific command, search the official documentation link provided.
+- FORMAT: Use the LaTeX structure from 'Master templates .txt'.
+
+🚀 Next Steps: How to Start Building
+ * Start with Volume 01: Ask your Replit AI:
+   > "Salman here. Using the Master Roadmap and the NIST OS Security link, write the complete content for Volume 01. Include the LaTeX formatting from my template and ensure there is a section on 'Blue Team CLI Essentials'."
+   > 
+ * Verify the Code: Every time it writes a Python script (like a log parser), ask:
+   > "Is this script optimized for a SOC environment? Add error handling and comments."
+   > 
+ * Push to GitHub: Once a volume is finished, use your Replit Git tool to push it to your main branch so your progress is saved.
